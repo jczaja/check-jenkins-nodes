@@ -5,7 +5,7 @@ use std::sync::mpsc;
 #[macroquad::main("Train-Helper")]
 async fn main() {
     let jenkins = JenkinsBuilder::new("https://crackerjack.intel.com/")
-        .with_user("jczaja", Some("_Bandzior65"))
+        .with_user("jczaja", Some("<TODO>"))
         .build().unwrap();
 
     let (sender, reciever) = mpsc::channel::<jenkins_api::nodes::ComputerSet>();
